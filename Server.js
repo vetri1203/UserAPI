@@ -6,6 +6,12 @@ app.use(express.json());
 
 app.use(cors({origin:`https://user-api-syot.onrender.com/api`}));
 
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    // Add other necessary CORS headers here
+    next();
+  });
+
 const port = 7000;
 
 
