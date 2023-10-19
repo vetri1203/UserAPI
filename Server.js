@@ -170,7 +170,7 @@ const user = {
             profession: "veterinarian",
             id: 25,
           },
-          user26: {
+           {
             name: "Aaron",
             password: "password26",
             profession: "teacher",
@@ -248,7 +248,7 @@ const user = {
             profession: "scientist",
             id: 38,
           },
-          user39: {
+        {
             name: "Noah",
             password: "password39",
             profession: "pilot",
@@ -290,7 +290,7 @@ const user = {
             profession: "economist",
             id: 45,
           },
-          user46: {
+         {
             name: "Uma",
             password: "password46",
             profession: "historian",
