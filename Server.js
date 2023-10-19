@@ -1,7 +1,10 @@
 import express from "express";
+import cors from 'cors';
 
 const app = express();
 app.use(express.json());
+
+app.use(cors({origin:`https://user-api-syot.onrender.com/api`}));
 
 const port = 7000;
 
@@ -355,7 +358,6 @@ app.get('/api/profession=:pro',(req,res)=>{
         else{
             res.json({"error":"No user Found"});
         }
-    
 })
   
 app.listen(port, (err) => {
